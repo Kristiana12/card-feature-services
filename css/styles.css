@@ -20,12 +20,10 @@
   --clr-shadow: rgba(131, 167, 210, 0.473);
 
   /* Font Sizes */
-  --font-size-title-desktop: 3.2rem;
+  --font-size-title-desktop: 3.4rem;
   --font-size-title-mobile: calc(2rem + 1vw);
-  --font-size-title-small-mobile: 2.2rem;
-  --font-size-title-small-desktop: 2.4rem;
-  --font-size-text-mobile: 1.5rem;
-  --font-size-text-desktop: 1.6rem;
+  --font-size-title-small: 2rem;
+  --font-size-text: 1.5rem;
 
   /* Margins */
   --margin-medium: 3.2rem;
@@ -43,17 +41,14 @@ html {
   font-family: "Poppins", sans-serif;
   font-size: 62.5%;
   line-height: 1.7;
-  min-height: 100vh;
-  width: 100vw;
 
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 p {
   color: var(--clr-gray-600);
-  font-size: var(--font-size-text-mobile);
+  font-size: var(--font-size-text);
   font-weight: 200;
 }
 
@@ -67,10 +62,10 @@ p {
   max-width: 65rem;
   text-align: center;
   padding-top: var(--padding-small);
+  color: var(--clr-gray-400);
 }
 
 .card-features__header--title {
-  color: var(--clr-gray-600);
   font-size: var(--font-size-title-mobile);
   font-weight: 200;
 }
@@ -78,7 +73,6 @@ p {
 .card-features__header--title span {
   display: block;
   font-weight: 600;
-  color: var(--clr-gray-400);
 }
 
 .card-features__header--para {
@@ -92,11 +86,10 @@ p {
 }
 
 .card-features__services > div {
-  /* width: 85%;
-  margin: 0 auto; */
+  background-color: #fff;
   max-width: 36rem;
   padding: var(--padding-medium);
-  box-shadow: 0.1rem 0.2rem 1rem var(--clr-shadow);
+  box-shadow: 0.1rem 1rem 1.5rem var(--clr-shadow);
   border-radius: 0.8rem;
   margin-bottom: var(--margin-medium);
 
@@ -107,7 +100,7 @@ p {
 
 .card-features__services--title {
   color: var(--clr-gray-400);
-  font-size: var(--font-size-title-small-mobile);
+  font-size: var(--font-size-title-small);
 }
 
 .card-features__services--para {
@@ -140,19 +133,19 @@ p {
   }
 
   .card-features__services > div {
-    max-width: 40rem;
+    max-width: 38rem;
     margin-bottom: var(--margin-small);
   }
 
   .card-features__services > div {
-    width: 95%;
+    width: 90%;
   }
 }
 
 /***************** Min Width: 1150px ******************/
 @media screen and (min-width: 1150px) {
   p {
-    font-size: var(--font-size-text-desktop);
+    font-size: var(--font-size-text);
   }
 
   .card-features__services {
@@ -165,7 +158,7 @@ p {
   }
 
   .card-features__services--title {
-    font-size: var(--font-size-title-small-desktop);
+    font-size: var(--font-size-title-small);
   }
 
   .card-features__services-1 {
